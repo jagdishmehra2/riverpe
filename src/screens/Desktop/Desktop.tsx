@@ -17,7 +17,7 @@ const navigationLinks = [
 
 export const Desktop = (): JSX.Element => {
   return (
-    <div className="flex flex-col w-full items-start px-0 py-[22px] relative bg-white">
+    <div className="flex flex-col w-full items-start px-0 py-[22px] relative bg-white overflow-x-hidden">
       <header className="flex h-[74px] items-center justify-between px-[60px] py-3 relative self-stretch w-full bg-white rounded-xl overflow-hidden">
         <div className="flex w-[250px] items-center gap-2.5 relative">
           <img

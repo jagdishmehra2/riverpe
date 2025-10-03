@@ -57,9 +57,9 @@ export const CallToActionSection = (): JSX.Element => {
         />
       </div>
 
-      <footer className="flex flex-col w-full bg-slate-50 border-t border-[#e1e8f0] px-[80.33px] pt-16 pb-0">
+      <footer className="flex flex-col w-full bg-slate-50 border-t border-[#e1e8f0] px-4 sm:px-8 lg:px-[80.33px] pt-16 pb-0">
         <div className="w-full max-w-[1280px] mx-auto">
-          <div className="grid grid-cols-[384px_176px_176px_176px_176px] gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-4">
                 <img
