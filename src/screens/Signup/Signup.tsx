@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 
 export const Signup = (): JSX.Element => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <header className="flex items-center px-12 py-6 border-b border-gray-200">
@@ -64,7 +66,7 @@ export const Signup = (): JSX.Element => {
                 />
               </div>
 
-              <Button className="w-full h-[56px] bg-[#2e5cef] hover:bg-[#2449c8] text-white rounded-lg [font-family:'Archivo',Helvetica] font-semibold text-base">
+              <Button onClick={() => navigate('/account-type')} className="w-full h-[56px] bg-[#2e5cef] hover:bg-[#2449c8] text-white rounded-lg [font-family:'Archivo',Helvetica] font-semibold text-base">
                 Sign up
               </Button>
             </div>
